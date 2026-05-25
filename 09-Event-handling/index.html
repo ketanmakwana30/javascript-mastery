@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event & Event Handling</title>
+    <style>
+        body {
+            background-color: #001;
+            color: #fff;
+            text-align: center;
+            font-size: 3.3vh;
+            font-family: '  ;
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+        h2 {
+            color: rgb(190, 202, 81);
+            margin-bottom: -30px;
+            margin-top:  30px;
+        }
+        h3 {
+            color: rgba(255, 166, 0, 0.753);
+            margin-top: 60px;
+        }
+
+        input {
+            padding: 10px;
+            background-color: rgb(75, 77, 79);
+        }
+
+        .lt {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name">
+
+    <ul>
+        <li>Mango </li>
+        <li>Graps</li>
+        <li>Banana</li>
+        <li>Chiku</li>
+        <li>Guava</li>
+    </ul>
+
+
+
+    <h1>Events</h1>
+
+
+    <h2>User Intigration Events</h2>
+
+    <h3>Mouse Event: </h3>
+    <p> click, dblclick, mousedown, mouseup, mouseover, mouseout, mouseenter, mouseleave, contextmenu </p>
+
+
+    <h3>Keyboard Event: </h3>
+    <p> keydown, keyup, keypress (legacy)</p>
+
+
+    <h3>Focus Event: </h3>
+    <p>focus, blur (these do not propagate/bubble)</p>
+
+
+    <h2>Document and Window Events </h2>
+
+    <h3>Lifecycle:</h3>
+    <p>load (fires when page/resources finish loading), unload, beforeunload.
+        Resize/Scroll: resize, scroll.</p>
+
+    <h3>Error:</h3>
+    <p>error (fires when resources like images or scripts fail to load).</p>
+
+
+    <h2> Form and Input Events</h2>
+
+    <h3>Submission:</h3>
+    <p> submit, reset.</p>
+
+    <h3>Input:</h3>
+    <p>input (fires on every change), change (fires on blur for most elements, or immediately for select tag), focus, blur.</p>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
