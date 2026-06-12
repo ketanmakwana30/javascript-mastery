@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Choose and Show Name</title>
+    <style>
+        body {
+            height: 90vh;
+            background-color: #001;
+            color: #565;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        input {
+            display: none;
+        }
+
+        .fileBtn {
+            background-color: rgb(116, 130, 137);
+            color: black;
+            padding: 10px 13px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            user-select: none;
+            transition: all 0.1s linear;
+        }
+
+        .fileBtn:hover {
+            background-color: rgb(167, 200, 216);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   
+    <input type="file">
+    <div class="fileBtn">Upload File</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
