@@ -1,50 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LocalStorage, SessionStorage & Cookies</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>localStorage</h1>
     <h3>~ 5MB Data Store</h3>
     <small> localStorage is a Browser Storage - it save data </small>
     <ul>
-        <li>Store</li>
-        <code>localStorage.setItem("name", "Ketan");</code>
-        <br><br>
+      <li>Store</li>
+      <code>localStorage.setItem("name", "Ketan");</code>
+      <br /><br />
 
-        <li>Get (Fetch Data)</li>
-        <code>let val = localStorage.getItem("name");</code>
-        <br><br>
+      <li>Get (Fetch Data)</li>
+      <code>let val = localStorage.getItem("name");</code>
+      <br /><br />
 
-        <li>Remove</li>
-        <code>localStorage.removeItem("name");</code>
-        <br><br>
+      <li>Remove</li>
+      <code>localStorage.removeItem("name");</code>
+      <br /><br />
 
-        <li>Update</li>
-        <code>localStorage.setItem("name", "Krishna");</code>
-        <br><br>
+      <li>Update</li>
+      <code>localStorage.setItem("name", "Krishna");</code>
+      <br /><br />
 
-        <li>clear</li>
-        <code>localStorage.clear();</code>
-        <br>
+      <li>clear</li>
+      <code>localStorage.clear();</code>
+      <br />
 
-        <p> - setItem are use for set and update the item , when item are not available so setItem make new item and all ready available to overright and make changes.</p>
+      <p>
+        - setItem are use for set and update the item , when item are not
+        available so setItem make new item and all ready available to overright
+        and make changes.
+      </p>
     </ul>
 
     <h1>SessionStorage</h1>
     <h3>~ 5MB Data Store</h3>
-    <small>SessionStorage is Browser Storage but when tab are close data delete</small>
-    <p>Same as a LocalStorage... </p>
-    
+    <small
+      >SessionStorage is Browser Storage but when tab are close data
+      delete</small
+    >
+    <p>Same as a LocalStorage...</p>
+
     <h1>Cookies</h1>
     <h3>~ 4KB Data Store</h3>
     <small>Cookies use for store small data in a Browser </small>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
