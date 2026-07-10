@@ -1,27 +1,55 @@
 // Create class
 
-class CreatePencil {
-  constructor(name, price, color) {
+class User {
+  constructor(name, email, color, role) {
     this.name = name;
-    this.price = price;
+    this.email = email;
     this.color = color;
-  }
-  write(text) {
-    let h1 = document.createElement("h1");
-    h1.style.color = this.color;
-    h1.textContent = text;
-    document.body.appendChild(h1);
+    this.role = "User";
   }
 
-  erase() {
-    document.body.querySelectorAll("h1").forEach((elem) => {
-      if (elem.style.color === this.color) {
-        elem.remove();
-      }
+  // Write method
+  write(text) {
+    let h2 = document.createElement("h2");
+    h2.style.color = this.color;
+    h2.textContent = `${this.name}: ${text}`;
+    document.body.appendChild(h2);
+  }
+
+  // checkRole
+  checkRole() {
+    return `You are ${this.role}`;
+  }
+}
+
+// Clasical Inheritance --> using extends (class -> class)
+class Admin extends User {
+  constructor(name, email, color) {
+    super(name, email, color);
+    this.role = "Admin";
+  }
+
+  // Remove method
+  remove() {
+    document.body.querySelectorAll("h2").forEach(function (elem) {
+      elem.remove();
     });
   }
 }
 
-let pencil1 = new CreatePencil("natraj", 10, "red");
-let pencil2 = new CreatePencil("apsara", 15, "orange");
-let pencil3 = new CreatePencil("doms", 20, "blue");
+let user1 = new User("Rajvir", "raj@gmail.com", "blue");
+let user2 = new User("Aniket", "anii@gmail.com", "orange");
+let admin1 = new Admin("Ketan", "ketanadmin@gmail.com", "red");
+
+//Prototypel Inheritance  --> object inherite all methods/ props ( object -> object)
+
+let coffee = {
+  color: "dard",
+  drink: function () {
+    console.log("Gut gut gut");
+  },
+};
+
+let arabiataCoffee = Object.create(coffee);
+
+arabiataCoffee.drink(); // Gut gut gut
